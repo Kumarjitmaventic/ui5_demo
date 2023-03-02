@@ -1,0 +1,94 @@
+{
+    "resource_table_data" : [
+        {
+            "id":"000120",
+            "desc":"",
+            "status":"In Progress",
+            "due_date":"10/05/2023",
+            "required":12,
+            "screening":5,
+            "selected":6
+        },
+        {
+            "id":"000123",
+            "desc":"",
+            "status":"In Progress",
+            "due_date":"10/05/2023",
+            "required":12,
+            "screening":5,
+            "selected":6
+        },
+        {
+            "id":"000124",
+            "desc":"",
+            "status":"In Progress",
+            "due_date":"10/05/2023",
+            "required":12,
+            "screening":5,
+            "selected":6
+        },
+        {
+            "id":"000125",
+            "desc":"",
+            "status":"In Progress",
+            "due_date":"10/05/2023",
+            "required":12,
+            "screening":5,
+            "selected":6
+        },
+        {
+            "id":"000126",
+            "desc":"",
+            "status":"In Progress",
+            "due_date":"10/05/2023",
+            "required":12,
+            "screening":5,
+            "selected":6
+        },
+        {
+            "id":"000127",
+            "desc":"",
+            "status":"In Progress",
+            "due_date":"10/05/2023",
+            "required":12,
+            "screening":5,
+            "selected":6
+        },
+        {
+            "id":"000135",
+            "desc":"",
+            "status":"In Progress",
+            "due_date":"10/05/2023",
+            "required":12,
+            "screening":5,
+            "selected":6
+        },
+        {
+            "id":"000161",
+            "desc":"",
+            "status":"In Progress",
+            "due_date":"10/05/2023",
+            "required":12,
+            "screening":5,
+            "selected":6
+        },
+        {
+            "id":"000130",
+            "desc":"",
+            "status":"Complete",
+            "due_date":"13/05/2023",
+            "required":12,
+            "screening":0,
+            "selected":12
+        },
+        {
+            "id":"000140",
+            "desc":"",
+            "status":"In Progress",
+            "due_date":"10/05/2023",
+            "required":12,
+            "screening":5,
+            "selected":6
+        }
+    ]
+}

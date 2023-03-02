@@ -1,0 +1,87 @@
+<mvc:View
+		controllerName="demo.demand.resourcedemand.controller.Home"
+		height="100%"
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns:core="sap.ui.core"
+		xmlns="sap.m"
+		xmlns:f="sap.f"
+		xmlns:fb="sap.ui.comp.filterbar"
+		xmlns:svm="sap.ui.comp.smartvariants">
+		<f:DynamicPage id="_IDGenDynamicPage1" headerExpanded="{/headerExpanded}">
+			<f:header>
+				<f:DynamicPageHeader id="_IDGenDynamicPageHeader1">
+					<f:content>
+						<fb:FilterBar id="filterbar" persistencyKey="myPersKey" useToolbar="false" search=".onSearch" filterChange=".onFilterChange" afterVariantLoad=".onAfterVariantLoad">
+							<fb:filterItems>
+								<fb:FilterItem id="_IDGenFilterItem1" name="Requisition No" label="Requisition No">
+									<fb:control>
+										<Input ></Input>
+									</fb:control>
+								</fb:FilterItem>
+								<fb:FilterItem id="_IDGenFilterItem2" name="Status" label="Status">
+									<fb:control>
+										<Input ></Input>
+									</fb:control>
+								</fb:FilterItem>
+								<fb:FilterItem id="_IDGenFilterItem3" name="Due Date" label="Due Date">
+									<fb:control>
+										<Input ></Input>
+									</fb:control>
+								</fb:FilterItem>
+							</fb:filterItems>
+						</fb:FilterBar>
+					</f:content>
+				</f:DynamicPageHeader>
+			</f:header>
+			<f:content>
+				<Table
+					id="table"
+					inset="false"
+					items="{
+						path: '/ProductCollection'
+					}"
+				>
+					<columns>
+						<Column id="_IDGenColumn1" minScreenWidth="Tablet" demandPopin="true">
+							<Text id="_IDGenText1" text="Requisition No"/>
+						</Column>
+						<Column id="_IDGenColumn2" minScreenWidth="Tablet" demandPopin="true">
+							<Text id="_IDGenText2" text="Description"/>
+						</Column>
+						<Column  minScreenWidth="Tablet" demandPopin="true">
+							<Text  text="Status"/>
+						</Column>
+                        <Column  minScreenWidth="Tablet" demandPopin="true">
+							<Text  text="Due Date"/>
+						</Column>
+                        <Column  minScreenWidth="Tablet" demandPopin="true">
+							<Text  text="Resoruce Required"/>
+						</Column>
+                        <Column  minScreenWidth="Tablet" demandPopin="true">
+							<Text  text="Resoruce in Screening"/>
+						</Column>
+                        <Column  minScreenWidth="Tablet" demandPopin="true">
+							<Text  text="Resoruce Selected"/>
+						</Column>
+					</columns>
+
+					<items>
+						<ColumnListItem id="_IDGenColumnListItem1" vAlign="Middle">
+							<cells>
+								<ObjectIdentifier id="_IDGenObjectIdentifier1" title="{Name}" text="{ProductId}" />
+								<Text id="_IDGenText4" text="{Category}" />
+								<Text text="{SupplierName}" />
+                                <Text text="{SupplierName}" />
+                                <Text text="{SupplierName}" />
+                                <Text text="{SupplierName}" />
+                                <Text text="{SupplierName}" />
+								
+
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+			</f:content>
+		</f:DynamicPage>
+</mvc:View>
+
