@@ -2,7 +2,7 @@
     "resource_table_data" : [
         {
             "id":"000120",
-            "desc":"",
+            "desc":"Project descriptions provide the following details to the applicants",
             "status":"In Progress",
             "due_date":"10/05/2023",
             "required":12,
@@ -10,53 +10,62 @@
             "selected":6
         },
         {
-            "id":"000123",
-            "desc":"",
-            "status":"In Progress",
+            "id":"000140",
+            "desc":"Project descriptions provide the following details to the applicants",
+            "status":"Complete",
             "due_date":"10/05/2023",
+            "required":6,
+            "screening":0,
+            "selected":6
+        }
+        {
+            "id":"000123",
+            "desc":"Project descriptions provide the following details to the applicants",
+            "status":"In Progress",
+            "due_date":"10/06/2023",
             "required":12,
             "screening":5,
             "selected":6
         },
         {
             "id":"000124",
-            "desc":"",
+            "desc":"Project descriptions provide the following details to the applicants",
             "status":"In Progress",
-            "due_date":"10/05/2023",
+            "due_date":"08/12/2023",
             "required":12,
             "screening":5,
             "selected":6
         },
         {
             "id":"000125",
-            "desc":"",
+            "desc":"Project descriptions provide the following details to the applicants",
             "status":"In Progress",
-            "due_date":"10/05/2023",
+            "due_date":"10/10/2023",
             "required":12,
             "screening":5,
             "selected":6
         },
         {
             "id":"000126",
-            "desc":"",
+            "desc":"Project descriptions provide the following details to the applicants",
             "status":"In Progress",
-            "due_date":"10/05/2023",
+            "due_date":"21/03/2023",
             "required":12,
             "screening":5,
             "selected":6
         },
         {
             "id":"000127",
-            "desc":"",
+            "desc":"Project descriptions provide the following details to the applicants",
             "status":"In Progress",
-            "due_date":"10/05/2023",
+            "due_date":"22/10/2023",
             "required":12,
             "screening":5,
             "selected":6
         },
         {
             "id":"000135",
-            "desc":"",
+            "desc":"Project descriptions provide the following details to the applicants",
             "status":"In Progress",
             "due_date":"10/05/2023",
             "required":12,
@@ -65,7 +74,7 @@
         },
         {
             "id":"000161",
-            "desc":"",
+            "desc":"Project descriptions provide the following details to the applicants",
             "status":"In Progress",
             "due_date":"10/05/2023",
             "required":12,
@@ -74,21 +83,13 @@
         },
         {
             "id":"000130",
-            "desc":"",
+            "desc":"Project descriptions provide the following details to the applicants",
             "status":"Complete",
             "due_date":"13/05/2023",
-            "required":12,
+            "required":10,
             "screening":0,
-            "selected":12
-        },
-        {
-            "id":"000140",
-            "desc":"",
-            "status":"In Progress",
-            "due_date":"10/05/2023",
-            "required":12,
-            "screening":5,
-            "selected":6
+            "selected":10
         }
+        
     ]
 }

@@ -37,9 +37,7 @@
 				<Table
 					id="table"
 					inset="false"
-					items="{
-						path: '/ProductCollection'
-					}"
+					items="{mainDataSource>/resource_table_data}"
 				>
 					<columns>
 						<Column id="_IDGenColumn1" minScreenWidth="Tablet" demandPopin="true">
@@ -69,7 +67,7 @@
 						<ColumnListItem id="_IDGenColumnListItem1" vAlign="Middle">
 							<cells>
 								<ObjectIdentifier id="_IDGenObjectIdentifier1" title="{Name}" text="{ProductId}" />
-								<Text id="_IDGenText4" text="{Category}" />
+								<Text id="_IDGenText4" text="{mainDataSource>id}" />
 								<Text text="{SupplierName}" />
                                 <Text text="{SupplierName}" />
                                 <Text text="{SupplierName}" />
