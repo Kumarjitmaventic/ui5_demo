@@ -36,9 +36,9 @@ sap.ui.define([
                         "required":8,
                         "screening":5,
                         "selected":1,
-                        "interview_date" : "16 Mar 2023",
+                        "interview_date" : "03 Mar 2023",
                         "interview_status":"Schedule",
-                        "employee":"Ismael Saunders"
+                        "employee":"Michael"
                     },
                     {
                         "id":"985",
@@ -114,8 +114,9 @@ sap.ui.define([
 
             },
             onSelectionChange: function(oEvent){
+                var oNextUIState = this.getOwnerComponent().getHelper().getNextUIState(1);
                 let oRouter = this.getOwnerComponent().getRouter();
-                oRouter.navTo("detailsPage");
+                oRouter.navTo("detailsPage" , {layout: oNextUIState.layout});
             }
         });
     });

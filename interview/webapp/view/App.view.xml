@@ -1,18 +1,18 @@
-<mvc:View controllerName="demo.interview.interview.controller.App"
+<!-- <mvc:View controllerName="demo.interview.interview.controller.App"
     xmlns:html="http://www.w3.org/1999/xhtml"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
     <App id="app">
         
     </App>
-</mvc:View>
+</mvc:View> -->
 
-<!-- <mvc:View xmlns="sap.f" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" controllerName="demo.interview.interview.controller.App" height="100%">
+<mvc:View xmlns:semantic="sap.f.semantic" xmlns="sap.f" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" controllerName="demo.interview.interview.controller.App" height="100%">
 	<FlexibleColumnLayout
 		autoFocus="false"
 		id="app"
 		stateChange="onStateChanged"
 		restoreFocusOnBackNavigation="true"
-		layout="{/layout}"
+		layout="TwoColumnsMidExpanded"
 		backgroundDesign="Translucent"/>
-</mvc:View> -->
+</mvc:View>

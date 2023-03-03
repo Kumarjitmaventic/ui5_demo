@@ -85,13 +85,17 @@
     },
     "routing": {
       "config": {
-        "routerClass": "sap.m.routing.Router",
+        "routerClass": "sap.f.routing.Router",
         "viewType": "XML",
+        "type": "View",
         "async": true,
-        "viewPath": "demo.interview.interview.view",
-        "controlAggregation": "pages",
+        "path": "demo.interview.interview.view",
+        
         "controlId": "app",
-        "clearControlAggregation": false
+        "transition": "slide",
+				"bypassed": {
+				}
+        
       },
       "routes": [
         {
@@ -106,25 +110,23 @@
           "pattern": "detailsPage",
           "target": [
             "TargetHome",
-              "TargetDetailsPage"
+            "TargetDetailsPage"
           ]
       }
       ],
       "targets": {
         "TargetHome": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
-          "viewId": "Home",
-          "viewName": "Home"
+          "name": "Home",
+					"controlAggregation": "beginColumnPages"
+          
         },
         "TargetDetailsPage": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
-          "viewId": "Deatils",
-          "viewName": "Details"
+          "name": "details",
+					"controlAggregation": "endColumnPages"
+          
+          
         }
+        
       }
     },
     "rootView": {

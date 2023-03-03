@@ -5,10 +5,15 @@
 sap.ui.define([
         "sap/ui/core/UIComponent",
         "sap/ui/Device",
-        "demo/interview/interview/model/models"
+        "demo/interview/interview/model/models",
+        "sap/base/util/UriParameters",
+        "sap/f/FlexibleColumnLayoutSemanticHelper",
+        "sap/f/library",
     ],
-    function (UIComponent, Device, models) {
+    function (UIComponent, Device, models,UriParameters,FlexibleColumnLayoutSemanticHelper,library) {
         "use strict";
+
+        var LayoutType = library.LayoutType;
 
         return UIComponent.extend("demo.interview.interview.Component", {
             metadata: {
