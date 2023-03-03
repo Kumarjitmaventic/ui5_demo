@@ -214,22 +214,22 @@
 
                         </uxap:actions>
                         <uxap:expandedContent>
-                            <Text id="_IDGenText2" text="{masterView>/Orders/2/desc}"></Text>
+                            <Text id="_IDGenText2" text="{masterView>/Orders/0/desc}"></Text>
                         </uxap:expandedContent>
                     </uxap:ObjectPageDynamicHeaderTitle>
                 </uxap:headerTitle>
                 <uxap:headerContent>
-                <l:Grid  defaultSpan="XL3 L6 M12 S12">
+                <l:Grid containerQuery="true"
+					defaultSpan="XL4 L4 M2 S2">
                         <l:HorizontalLayout >
-							<Avatar src="{masterView>/avatar}" displaySize="L" class="sapUiSmallMarginEnd"></Avatar>
+                            <Avatar src="{masterView>/avatar}" displaySize="L" class="sapUiSmallMarginEnd"></Avatar>
                             <l:VerticalLayout class="sapUiSmallMarginBeginEnd">
-                                <Text text="Michael@gmail.com"></Text>
-                                <Text text="4630 Chapmans Lane, United States"></Text>
+                                <Text text="Michael9002@gmail.com"></Text>
+                                <Text text="9002287373"></Text>
 								<ProgressIndicator percentValue="70" displayValue="Skill's Matched (75%)" ></ProgressIndicator>
 								
                             </l:VerticalLayout>
-						</l:HorizontalLayout>
-                            
+                        </l:HorizontalLayout>
                         <l:VerticalLayout >
                                 <Label text="Requisition Skill Set :"></Label>
 									
@@ -242,7 +242,7 @@
 									<Tokenizer editable="false" class="sapUiSmallMarginEnd">
 										<tokens >
 											<Token text="Spring Boot Secuirty"></Token>
-											<Token text="Spring boot jpa"></Token>
+											<Token text="Spring boot Jpa"></Token>
 										</tokens>
 									</Tokenizer>
                                     
@@ -259,6 +259,12 @@
 								<Tokenizer editable="false" class="sapUiSmallMarginEnd">
 										<tokens >
 											<Token text="Spring Boot Secuirty"></Token>
+											<Token text="Spring Boot Microservices"></Token>
+										</tokens>
+									</Tokenizer>
+									<Tokenizer editable="false">
+										<tokens >
+											<Token text="Angular"></Token>
 										</tokens>
 									</Tokenizer>
                         </l:VerticalLayout>

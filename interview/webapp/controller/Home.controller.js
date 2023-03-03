@@ -20,14 +20,25 @@ sap.ui.define([
                     delay: 0,
                     titleCount: 3,
                     noDataText: "masterListNoDataText",
-                    avatar : sap.ui.require.toUrl("demo/interview/interview/model/6769264_60111.jpg")
+                    avatar : sap.ui.require.toUrl("demo/interview/interview/model/1234.png")
                 });
 
                 
 
                 var order = [
 
-                    
+                    {
+                        "id":"875",
+                        "desc":"Custom JAVA Development with Spring Boot ",
+                        "status":"Inprogress",
+                        "due_date":"16 March 2023",
+                        "required":3,
+                        "screening":2,
+                        "selected":2,
+                        "interview_date" : "03 Mar 2023",
+                        "interview_status":"Schedule",
+                        "employee":"Michael"
+                    },
                     {
                         "id":"879",
                         "desc":"Functional Requiment for SAP Module FI , MM , SD",
@@ -48,34 +59,10 @@ sap.ui.define([
                         "required":2,
                         "screening":0,
                         "selected":0,
-                        "interview_date" : "23 March 2023",
-                        "interview_status":"Schedule",
+                        "interview_date" : "01 March 2023",
+                        "interview_status":"Rejected",
                         "employee":"Frederick Santiago"
                     },
-                    {
-                        "id":"875",
-                        "desc":"Custom JAVA Development with Spring Boot ",
-                        "status":"Inprogress",
-                        "due_date":"16 March 2023",
-                        "required":3,
-                        "screening":2,
-                        "selected":2,
-                        "interview_date" : "01 Mar 2023",
-                        "interview_status":"Rejected",
-                        "employee":"Deborah Stanley"
-                    },
-                    {
-                        "id":"850",
-                        "desc":"UI Development for Extension application in SAP S4 HANA ",
-                        "status":"Closed",
-                        "due_date":"28 Feb 2023",
-                        "required":3,
-                        "screening":0,
-                        "selected":3,
-                        "interview_date" : "26 Feb 2023",
-                        "interview_status":"Approved",
-                        "employee":"Stacey Cortez"
-                    }
                     
                 ];
 
@@ -83,7 +70,7 @@ sap.ui.define([
                     "Author" : "Alexandrina Victoria",
                     "AuthorPicUrl" : sap.ui.require.toUrl("demo/interview/interview/model/women.jpg"),
                     "Type" : "Request",
-                    "Date" : "March 03 2013",
+                    "Date" : "March 03 2023",
                     "Text" : "Michael has good work experience, and required skill set also matching.I think he will be a good choice."
                 }
                 // , {
