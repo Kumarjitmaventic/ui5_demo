@@ -18,7 +18,7 @@ sap.ui.define([
                     isFilterBarVisible: false,
                     filterBarLabel: "",
                     delay: 0,
-                    titleCount: 10,
+                    titleCount: 3,
                     noDataText: "masterListNoDataText",
                     avatar : sap.ui.require.toUrl("demo/interview/interview/model/6769264_60111.jpg")
                 });

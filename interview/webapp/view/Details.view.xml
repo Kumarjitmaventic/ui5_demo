@@ -219,7 +219,7 @@
                     </uxap:ObjectPageDynamicHeaderTitle>
                 </uxap:headerTitle>
                 <uxap:headerContent>
-                <l:Grid  defaultSpan="XL3 L3 M6 S12">
+                <l:Grid  defaultSpan="XL3 L6 M12 S12">
                         <l:HorizontalLayout >
 							<Avatar src="{masterView>/avatar}" displaySize="L" class="sapUiSmallMarginEnd"></Avatar>
                             <l:VerticalLayout class="sapUiSmallMarginBeginEnd">
@@ -231,7 +231,7 @@
 						</l:HorizontalLayout>
                             
                         <l:VerticalLayout >
-                                <Label text="Requisition Skill set"></Label>
+                                <Label text="Requisition Skill Set :"></Label>
 									
 									<Tokenizer editable="false" class="sapUiSmallMarginEnd">
 										<tokens >
@@ -249,7 +249,7 @@
                                 
                         </l:VerticalLayout>
 						<l:VerticalLayout >
-                                <Label text="Candidate Skills"></Label>
+                                <Label text="Candidate Skills :"></Label>
                                 <Tokenizer editable="false" class="sapUiSmallMarginEnd">
 										<tokens >
 											<Token text="Core JAVA"></Token>
