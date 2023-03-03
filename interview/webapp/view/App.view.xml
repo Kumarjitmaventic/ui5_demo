@@ -1,0 +1,18 @@
+<mvc:View controllerName="demo.interview.interview.controller.App"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <App id="app">
+        
+    </App>
+</mvc:View>
+
+<!-- <mvc:View xmlns="sap.f" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" controllerName="demo.interview.interview.controller.App" height="100%">
+	<FlexibleColumnLayout
+		autoFocus="false"
+		id="app"
+		stateChange="onStateChanged"
+		restoreFocusOnBackNavigation="true"
+		layout="{/layout}"
+		backgroundDesign="Translucent"/>
+</mvc:View> -->

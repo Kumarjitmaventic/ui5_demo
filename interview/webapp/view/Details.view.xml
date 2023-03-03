@@ -1,0 +1,319 @@
+<!-- <mvc:View controllerName="demo.interview.interview.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content />
+    </Page>
+</mvc:View> -->
+
+
+<!-- <mvc:View displayBlock="true" controllerName="demo.interview.interview.controller.Home" height="100%"
+		xmlns="sap.uxap"
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns:m="sap.m"
+		xmlns:f="sap.f"
+		xmlns:form="sap.ui.layout.form">
+
+	<ObjectPageLayout id="ObjectPageLayout"
+					 showTitleInHeaderContent="true"
+					alwaysShowContentHeader="false"
+					preserveHeaderStateOnScroll="false"
+					headerContentPinnable="true"
+					isChildPage="true"
+					upperCaseAnchorBar="false">
+				<headerTitle>
+					<ObjectPageDynamicHeaderTitle id="_IDGenObjectPageDynamicHeaderTitle1">
+						<expandedHeading>
+							<m:Title id="_IDGenTitle1" text="{products>Name}" wrapping="true" class="sapUiSmallMarginEnd"/>
+						</expandedHeading>
+
+						<snappedHeading>
+							<m:FlexBox id="_IDGenFlexBox1" wrap="Wrap" fitContainer="true" alignItems="Center">
+								<m:FlexBox id="_IDGenFlexBox2" wrap="NoWrap" fitContainer="true" alignItems="Center" class="sapUiTinyMarginEnd">
+									<f:Avatar id="_IDGenAvatar1" src="../../../../../../../{products>ProductPicUrl}" displaySize="S" displayShape="Square"/>
+									<m:Title id="_IDGenTitle2" text="{products>Name}" wrapping="true" class="sapUiTinyMarginEnd"/>
+								</m:FlexBox>
+							</m:FlexBox>
+						</snappedHeading>
+
+						<navigationActions>
+							<m:OverflowToolbarButton type="Transparent" icon="sap-icon://full-screen" press="handleFullScreen" id="enterFullScreenBtn" tooltip="Enter Full Screen Mode" visible="{= ${/actionButtonsInfo/midColumn/fullScreen} !== null }"/>
+							<m:OverflowToolbarButton type="Transparent" icon="sap-icon://exit-full-screen" press="handleExitFullScreen" id="exitFullScreenBtn" tooltip="Exit Full Screen Mode" visible="{= ${/actionButtonsInfo/midColumn/exitFullScreen} !== null }"/>
+							<m:OverflowToolbarButton id="_IDGenOverflowToolbarButton1" type="Transparent" icon="sap-icon://decline" press="handleClose"  tooltip="Close middle column" visible="{= ${/actionButtonsInfo/midColumn/closeColumn} !== null }"/>
+						</navigationActions>
+
+						<actions>
+							<m:Button id="_IDGenButton1"
+									text="Edit"
+									type="Emphasized"
+									press="toggleAreaPriority"/>
+							<m:Button id="_IDGenButton2"
+									text="Delete"
+									type="Transparent"/>
+							<m:Button id="_IDGenButton3"
+									text="Copy"
+									type="Transparent"/>
+							<m:Button id="_IDGenButton4"
+									text="Toggle Footer"
+									type="Transparent"
+									press="onToggleFooter"/>
+							<m:Button id="_IDGenButton5"
+									icon="sap-icon://action"
+									type="Transparent"/>
+						</actions>
+
+					</ObjectPageDynamicHeaderTitle>
+				</headerTitle>
+
+				<headerContent>
+					<m:FlexBox id="_IDGenFlexBox3" wrap="Wrap" fitContainer="true" alignItems="Stretch">
+						<f:Avatar id="_IDGenAvatar2" src="../../../../../../../{products>ProductPicUrl}"
+								  displaySize="L"
+								  displayShape="Square"
+								  class="sapUiTinyMarginEnd">
+						</f:Avatar>
+						<m:VBox id="_IDGenVBox1" justifyContent="Center" class="sapUiSmallMarginEnd">
+							<m:Label id="_IDGenLabel1" text="Main Category"/>
+							<m:Text id="_IDGenText1" text="{products>MainCategory}"/>
+						</m:VBox>
+						<m:VBox id="_IDGenVBox2" justifyContent="Center" class="sapUiSmallMarginEnd">
+							<m:Label id="_IDGenLabel2" text="Subcategory"/>
+							<m:Text id="_IDGenText2" text="{products>Category}"/>
+						</m:VBox>
+						<m:VBox id="_IDGenVBox3" justifyContent="Center" class="sapUiSmallMarginEnd">
+							<m:Label id="_IDGenLabel3" text="Price"/>
+							<m:ObjectNumber id="_IDGenObjectNumber1" number="{products>CurrencyCode} {products>Price}" emphasized="false"/>
+						</m:VBox>
+					</m:FlexBox>
+				</headerContent>
+
+		<sections>
+			<ObjectPageSection id="_IDGenObjectPageSection1" title="General Information">
+				<subSections>
+					<ObjectPageSubSection id="_IDGenObjectPageSubSection1">
+						<blocks>
+							<form:SimpleForm id="_IDGenSimpleForm1"
+								maxContainerCols="2"
+								editable="false"
+								layout="ResponsiveGridLayout"
+								labelSpanL="12"
+								labelSpanM="12"
+								emptySpanL="0"
+								emptySpanM="0"
+								columnsL="1"
+								columnsM="1">
+								<form:content>
+									<m:Label id="_IDGenLabel4" text="Product ID"/>
+									<m:Text id="_IDGenText3" text="{products>ProductId}"/>
+									<m:Label id="_IDGenLabel5" text="Description"/>
+									<m:Text id="_IDGenText4" text="{products>Description}"/>
+									<m:Label id="_IDGenLabel6" text="Supplier"/>
+									<m:Text id="_IDGenText5" text="{products>SupplierName}"/>
+								</form:content>
+							</form:SimpleForm>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+
+			<ObjectPageSection id="_IDGenObjectPageSection2" title="Suppliers">
+				<subSections>
+					<ObjectPageSubSection id="_IDGenObjectPageSubSection2">
+						<blocks>
+							<m:Table
+								id="suppliersTable"
+								mode="SingleSelectMaster"
+								itemPress="handleItemPress"
+								items="{path : 'products>/ProductCollectionStats/Filters/1/values'}">
+								<m:columns>
+									<m:Column id="_IDGenColumn1" />
+								</m:columns>
+								<m:items>
+									<m:ColumnListItem id="_IDGenColumnListItem1" type="Navigation">
+										<m:cells>
+											<m:ObjectIdentifier id="_IDGenObjectIdentifier1" text="{products>text}" />
+										</m:cells>
+									</m:ColumnListItem>
+								</m:items>
+							</m:Table>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+		</sections>
+	</ObjectPageLayout>
+</mvc:View> -->
+
+
+<mvc:View xmlns:uxap="sap.uxap" xmlns:form="sap.ui.layout.form"
+	controllerName="demo.interview.interview.controller.Home"
+	xmlns="sap.m"
+	xmlns:semantic="sap.f.semantic"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+    xmlns:chart="sap.suite.ui.microchart"
+    >
+	<semantic:SemanticPage
+		id="page"
+		busy="{detailView>/busy}"
+		busyIndicatorDelay="{detailView>/delay}">
+		<!-- <semantic:titleHeading>
+			<Title id="_IDGenTitle1" text="122120" />
+		</semantic:titleHeading>
+        <semantic:titleExpandedContent>
+            <Text id="_IDGenText1" text="Project Description"></Text>
+        </semantic:titleExpandedContent> -->
+		<!-- <semantic:headerContent>
+            <form:ResponsiveGridLayout id="_IDGenResponsiveGridLayout1" ></form:ResponsiveGridLayout>
+                <l:Grid id="_IDGenGrid1" containerQuery="true"
+					defaultSpan="XL4 L4 M4 S4">
+                    <l:VerticalLayout id="_IDGenVerticalLayout1" >
+                        <chart:ComparisonMicroChart id="_IDGenComparisonMicroChart1" >
+                            <chart:data>
+                                <chart:ComparisonMicroChartData id="_IDGenComparisonMicroChartData1" title="Required" value="10/15"  color="Good"></chart:ComparisonMicroChartData>
+                                <chart:ComparisonMicroChartData id="_IDGenComparisonMicroChartData2" title="In screening" value="5" color="Neutral"></chart:ComparisonMicroChartData>
+                                <chart:ComparisonMicroChartData id="_IDGenComparisonMicroChartData3" title="Selected" value="5" color="Good"></chart:ComparisonMicroChartData>
+                                <chart:ComparisonMicroChartData id="_IDGenComparisonMicroChartData4" title="Rejected" value="15" color="Good"></chart:ComparisonMicroChartData>
+                            </chart:data>
+                        </chart:ComparisonMicroChart>
+                    </l:VerticalLayout>    
+                    <l:VerticalLayout id="_IDGenVerticalLayout2">
+                        <ObjectAttribute id="_IDGenObjectAttribute1"
+                            title="Due Date"
+                            text="25 Dec 2023"/>
+                        <ObjectAttribute id="_IDGenObjectAttribute2" title="Status" text="Pending" ></ObjectAttribute>
+				    </l:VerticalLayout>
+                    <l:VerticalLayout id="_IDGenVerticalLayout3">
+                        <Label id="_IDGenLabel1" text="Skils"></Label>
+				    </l:VerticalLayout>
+                </l:Grid>
+
+		</semantic:headerContent> -->
+		<semantic:content>
+            <uxap:ObjectPageLayout id="_IDGenObjectPageLayout1" showTitleInHeaderContent="true"
+            showEditHeaderButton="true"
+            editHeaderButtonPress="handleEditBtnPress"
+            upperCaseAnchorBar="false">
+                <uxap:headerTitle>
+                    <uxap:ObjectPageDynamicHeaderTitle id="_IDGenObjectPageDynamicHeaderTitle1" >
+                        <uxap:expandedHeading>
+                            <HBox id="_IDGenHBox1" >
+                                <Title id="_IDGenTitle2" text="Michael"></Title>
+                                <!-- <ObjectMarker type="Favorite" class="sapUiTinyMarginBegin"></ObjectMarker> -->
+                            </HBox>
+                        </uxap:expandedHeading>
+                        <uxap:snappedHeading>
+                            <FlexBox id="_IDGenFlexBox1" fitContainer="true" alignItems="Center">
+                                <Avatar id="_IDGenAvatar1" src="{masterView>/avatar}" class="sapUiTinyMarginEnd"></Avatar>
+                                <Title id="_IDGenTitle3" text="Michael" wrapping="true"></Title>
+                            </FlexBox>
+                        </uxap:snappedHeading>
+                        <uxap:actions>
+                            <Button text="Approve" type="Accept"></Button>
+                            <Button text="Reject" type="Reject"></Button>
+
+                        </uxap:actions>
+                        <uxap:expandedContent>
+                            <Text id="_IDGenText2" text="{masterView>/Orders/2/desc}"></Text>
+                        </uxap:expandedContent>
+                    </uxap:ObjectPageDynamicHeaderTitle>
+                </uxap:headerTitle>
+                <uxap:headerContent>
+                <l:Grid containerQuery="true"
+					defaultSpan="XL4 L4 M2 S2">
+                        <HBox >
+                            <Avatar src="{masterView>/avatar}" displaySize="L" class="sapUiSmallMarginEnd"></Avatar>
+                            <l:VerticalLayout class="sapUiSmallMarginBeginEnd">
+                                <Text text="Michael@gmail.com"></Text>
+                                <Text text="4630 Chapmans Lane, United States"></Text>
+								<ProgressIndicator percentValue="70" displayValue="Skill's Matched (75%)" ></ProgressIndicator>
+								
+                            </l:VerticalLayout>
+                        </HBox>
+                        <l:VerticalLayout >
+                                <Label text="Requisition Skill set"></Label>
+									
+									<Tokenizer editable="false">
+										<tokens >
+											<Token text="Core JAVA"></Token>
+											<Token text="Spring Boot Integration With MongoDB "></Token>
+										</tokens>
+									</Tokenizer>
+									<Tokenizer editable="false">
+										<tokens >
+											<Token text="Spring Boot Secuirty"></Token>
+											<Token text="Spring boot jpa"></Token>
+										</tokens>
+									</Tokenizer>
+                                    
+                                
+                        </l:VerticalLayout>
+						<l:VerticalLayout >
+                                <Label text="Candidate Skills"></Label>
+                                <Tokenizer editable="false">
+										<tokens >
+											<Token text="Core JAVA"></Token>
+											<Token text="Spring Boot Integration With MongoDB "></Token>
+										</tokens>
+								</Tokenizer>
+								<Tokenizer editable="false">
+										<tokens >
+											<Token text="Spring Boot Secuirty"></Token>
+										</tokens>
+									</Tokenizer>
+                        </l:VerticalLayout>
+                        
+                </l:Grid>
+                </uxap:headerContent>
+                <uxap:sections>
+                    <uxap:ObjectPageSection titleUppercase="false" title="Feedback">
+                        <uxap:subSections>
+                            <uxap:ObjectPageSubSection >
+                                <l:VerticalLayout width="100%">
+                                    <FeedInput ></FeedInput>
+                                    <List 
+                                    showSeparators="Inner"
+		                            items="{masterView>/comment}">
+                                        <FeedListItem sender="{masterView>Author}"
+                                            icon="{masterView>AuthorPicUrl}"
+                                            senderPress="onSenderPress"
+                                            iconPress="onIconPress"
+                                            iconDensityAware="false"
+                                            timestamp="{masterView>Date}"
+                                            text="{masterView>Text}"
+                                            convertLinksToAnchorTags="All">
+                                        </FeedListItem>
+                                    </List>
+                                </l:VerticalLayout>
+                                
+                            </uxap:ObjectPageSubSection>
+                        </uxap:subSections>
+                    </uxap:ObjectPageSection>
+                </uxap:sections>
+            </uxap:ObjectPageLayout>
+			
+		</semantic:content>
+		<!-- <semantic:sendEmailAction>
+			<semantic:SendEmailAction
+				id="shareEmail"
+				press=".onSendEmailPress"/>
+		</semantic:sendEmailAction>
+		<semantic:closeAction>
+			<semantic:CloseAction
+				id="closeColumn"
+				press=".onCloseDetailPress"/>
+		</semantic:closeAction>
+		<semantic:fullScreenAction>
+			<semantic:FullScreenAction
+				id="enterFullScreen"
+				visible="{= !${device>/system/phone} &amp;&amp; !${appView>/actionButtonsInfo/midColumn/fullScreen}}"
+				press="toggleFullScreen"/>
+		</semantic:fullScreenAction>
+		<semantic:exitFullScreenAction>
+			<semantic:ExitFullScreenAction
+				id="exitFullScreen"
+				visible="{= !${device>/system/phone} &amp;&amp; ${appView>/actionButtonsInfo/midColumn/fullScreen}}"
+				press="toggleFullScreen"/>
+		</semantic:exitFullScreenAction> -->
+	</semantic:SemanticPage>
+</mvc:View>

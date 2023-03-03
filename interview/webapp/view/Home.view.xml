@@ -1,5 +1,14 @@
+<!-- <mvc:View controllerName="demo.interview.interview.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content />
+    </Page>
+</mvc:View> -->
+
+
 <mvc:View xmlns:f="sap.f" xmlns:core="sap.ui.core"
-	controllerName="demo.technical.list.technicalinterview.controller.App"
+	controllerName="demo.interview.interview.controller.Home"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:semantic="sap.f.semantic">
@@ -91,10 +100,8 @@
 							
 							<attributes>
 								<ObjectAttribute id="companyName" text="{masterView>desc}" />
-								<ObjectAttribute id="_IDGenObjectAttribute1" title="Due Date"
-									text="{= ${masterView>due_date}
-										? ${ path: 'masterView>due_date'}
-										: ${i18n>commonItemNotYetShipped} }" />
+								<ObjectAttribute id="employee" title="Employee" text="{masterView>employee}" />
+								
 							</attributes>
 						</ObjectListItem>
 					</items>
