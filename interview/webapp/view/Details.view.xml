@@ -214,7 +214,7 @@
 
                         </uxap:actions>
                         <uxap:expandedContent>
-                            <Text id="_IDGenText2" text="{masterView>/Orders/2/desc}"></Text>
+                            <Text id="_IDGenText2" text="{masterView>/Orders/0/desc}"></Text>
                         </uxap:expandedContent>
                     </uxap:ObjectPageDynamicHeaderTitle>
                 </uxap:headerTitle>
@@ -242,7 +242,7 @@
 									<Tokenizer editable="false">
 										<tokens >
 											<Token text="Spring Boot Secuirty"></Token>
-											<Token text="Spring boot jpa"></Token>
+											<Token text="Spring boot Jpa"></Token>
 										</tokens>
 									</Tokenizer>
                                     
