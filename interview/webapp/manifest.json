@@ -100,9 +100,10 @@
       "routes": [
         {
           "name": "RouteHome",
-          "pattern": ":?query:",
+          "pattern": ":layout:",
           "target": [
-            "TargetHome"
+            "TargetHome",
+            "TargetDetailsPage"
           ]
         },
         {
@@ -122,7 +123,7 @@
         },
         "TargetDetailsPage": {
           "name": "details",
-					"controlAggregation": "endColumnPages"
+					"controlAggregation": "midColumnPages"
           
           
         }

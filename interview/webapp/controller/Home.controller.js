@@ -114,9 +114,9 @@ sap.ui.define([
 
             },
             onSelectionChange: function(oEvent){
-                var oNextUIState = this.getOwnerComponent().getHelper().getNextUIState(1);
+                // var oNextUIState = this.getOwnerComponent().getHelper().getNextUIState(1);
                 let oRouter = this.getOwnerComponent().getRouter();
-                oRouter.navTo("detailsPage" , {layout: oNextUIState.layout});
+                oRouter.navTo("detailsPage" , {layout: "midColumnPages"});
             }
         });
     });

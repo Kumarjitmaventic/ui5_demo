@@ -12,7 +12,7 @@
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:semantic="sap.f.semantic">
-		<semantic:SemanticPage id="page">
+		<semantic:SemanticPage id="Home">
 			<semantic:titleHeading>
 				<Title
 					id="masterHeaderTitle"

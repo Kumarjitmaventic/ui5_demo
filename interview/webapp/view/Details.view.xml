@@ -154,7 +154,7 @@
     xmlns:chart="sap.suite.ui.microchart"
     >
 	<semantic:SemanticPage
-		id="page"
+		id="Details"
 		busy="{detailView>/busy}"
 		busyIndicatorDelay="{detailView>/delay}">
 		<!-- <semantic:titleHeading>
@@ -219,27 +219,27 @@
                     </uxap:ObjectPageDynamicHeaderTitle>
                 </uxap:headerTitle>
                 <uxap:headerContent>
-                <l:Grid containerQuery="true"
-					defaultSpan="XL4 L4 M2 S2">
-                        <HBox >
-                            <Avatar src="{masterView>/avatar}" displaySize="L" class="sapUiSmallMarginEnd"></Avatar>
+                <l:Grid  defaultSpan="XL3 L3 M6 S12">
+                        <l:HorizontalLayout >
+							<Avatar src="{masterView>/avatar}" displaySize="L" class="sapUiSmallMarginEnd"></Avatar>
                             <l:VerticalLayout class="sapUiSmallMarginBeginEnd">
                                 <Text text="Michael@gmail.com"></Text>
                                 <Text text="4630 Chapmans Lane, United States"></Text>
 								<ProgressIndicator percentValue="70" displayValue="Skill's Matched (75%)" ></ProgressIndicator>
 								
                             </l:VerticalLayout>
-                        </HBox>
+						</l:HorizontalLayout>
+                            
                         <l:VerticalLayout >
                                 <Label text="Requisition Skill set"></Label>
 									
-									<Tokenizer editable="false">
+									<Tokenizer editable="false" class="sapUiSmallMarginEnd">
 										<tokens >
 											<Token text="Core JAVA"></Token>
 											<Token text="Spring Boot Integration With MongoDB "></Token>
 										</tokens>
 									</Tokenizer>
-									<Tokenizer editable="false">
+									<Tokenizer editable="false" class="sapUiSmallMarginEnd">
 										<tokens >
 											<Token text="Spring Boot Secuirty"></Token>
 											<Token text="Spring boot jpa"></Token>
@@ -250,13 +250,13 @@
                         </l:VerticalLayout>
 						<l:VerticalLayout >
                                 <Label text="Candidate Skills"></Label>
-                                <Tokenizer editable="false">
+                                <Tokenizer editable="false" class="sapUiSmallMarginEnd">
 										<tokens >
 											<Token text="Core JAVA"></Token>
 											<Token text="Spring Boot Integration With MongoDB "></Token>
 										</tokens>
 								</Tokenizer>
-								<Tokenizer editable="false">
+								<Tokenizer editable="false" class="sapUiSmallMarginEnd">
 										<tokens >
 											<Token text="Spring Boot Secuirty"></Token>
 										</tokens>
